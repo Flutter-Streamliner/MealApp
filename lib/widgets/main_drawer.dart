@@ -43,7 +43,7 @@ class MainDrawer extends StatelessWidget {
             'Meals', 
             Icons.restaurant,
             () {
-              Navigator.of(context).pushNamed('/');
+              Navigator.of(context).pushReplacementNamed('/');
             }
           ),
           SizedBox(height: 10,),
@@ -51,7 +51,7 @@ class MainDrawer extends StatelessWidget {
             'Filters', 
             Icons.settings,
             (){
-              Navigator.of(context).pushNamed(FiltersScreen.routeName);
+              Navigator.of(context).pushReplacementNamed(FiltersScreen.routeName);
             }
           ),
         ],
